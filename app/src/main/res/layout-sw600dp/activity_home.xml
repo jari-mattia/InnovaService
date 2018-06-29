@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_android_mobile">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/constraint"
+        app:layout_constraintEnd_toEndOf="@id/constraint"
+        app:layout_constraintStart_toStartOf="@id/constraint"
+        app:layout_constraintTop_toTopOf="@id/constraint">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="600dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="120dp"
+            android:contentDescription="@string/logo_desc"
+            android:src="@drawable/home_logo"
+            app:layout_constraintBottom_toTopOf="@id/title"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/facility_management"
+            android:textAlignment="center"
+            android:textColor="@color/lightText"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:text="@string/description"
+            android:textAlignment="center"
+            android:textColor="@color/lightText"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toTopOf="@id/button_home_intervento"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintStart_toStartOf="@+id/container"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_home_intervento"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/button_home"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toTopOf="@id/button_home_servizi"
+            app:layout_constraintEnd_toEndOf="@+id/container"
+            app:layout_constraintStart_toStartOf="@id/container"
+            app:layout_constraintTop_toBottomOf="@id/desc" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_home_servizi"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/button_service"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:backgroundTint="#00FFFFFF"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="@id/container"
+            app:layout_constraintEnd_toEndOf="@id/container"
+            app:layout_constraintStart_toStartOf="@+id/container"
+            app:layout_constraintTop_toBottomOf="@id/button_home_intervento"
+            app:strokeColor="@color/lightText"
+            app:strokeWidth="1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h2_title">24sp</dimen>
+    <dimen name="icon_size">60dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="dp_32" />
+    <dimen name="icon_custom_size">30dp</dimen>
+</resources>

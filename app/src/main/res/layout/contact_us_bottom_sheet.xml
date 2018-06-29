@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8"
+    android:orientation="vertical">
+
+
+        <TableRow
+            android:id="@+id/header_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/icon_size"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_marginStart="@dimen/dp_16"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="@string/contact_us"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+    <View
+        android:layout_width="match_parent"
+
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@android:color/darker_gray"/>
+
+    <TableRow
+        android:id="@+id/call_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/call_img"
+            android:layout_width="@dimen/icon_custom_size"
+            android:layout_height="@dimen/icon_custom_size"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/call"
+            android:tint="@color/icon_blue"
+            app:srcCompat="@drawable/call" />
+
+        <LinearLayout
+            android:id="@+id/call_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/call_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/call_title"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/call_text"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/phone_number"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/whatsapp_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/whatsapp_img"
+            android:layout_width="@dimen/icon_custom_size"
+            android:layout_height="@dimen/icon_custom_size"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/whatsapp"
+            android:tint="@color/icon_blue"
+            app:srcCompat="@drawable/whatsapp" />
+
+        <LinearLayout
+            android:id="@+id/whatsapp_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/whatsapp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="top|start"
+                android:text="@string/whatsapp_title"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/whatsapp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="top|start"
+                android:text="@string/whatsapp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/email_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/email_img"
+            android:layout_width="@dimen/icon_custom_size"
+            android:layout_height="@dimen/icon_custom_size"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/mail"
+            android:tint="@color/icon_blue"
+            app:srcCompat="@drawable/mail" />
+
+        <LinearLayout
+            android:id="@+id/email_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/email_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="top|start"
+                android:text="@string/email_title"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/email"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/photo_row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="@dimen/dp_16">
+
+        <ImageView
+            android:id="@+id/photo_img"
+            android:layout_width="@dimen/icon_custom_size"
+            android:layout_height="@dimen/icon_custom_size"
+            android:layout_gravity="start|center_vertical"
+            android:src="@drawable/photo"
+            android:tint="@color/icon_blue"
+            app:srcCompat="@drawable/photo" />
+
+        <LinearLayout
+            android:id="@+id/photo_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/photo_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="top|start"
+                android:text="@string/photo_title"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/photo_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/photo_text"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+    </TableRow>
+
+
+</LinearLayout>

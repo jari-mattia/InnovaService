@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">InnovaService</string>
+    <string name="facility_management">Facility \n Management</string>
+    <string name="logo_desc">Innova Service</string>
+    <string name="description">a sostegno \n di aziende e privati</string>
+    <string name="button_home">richiedi intervento</string>
+    <string name="button_service">scopri i nostri servizi</string>
+    <string name="call_title">Chiamaci</string>
+    <string name="email_title">Mail</string>
+    <string name="whatsapp_title">Whatsapp</string>
+    <string name="photo_title">Scatta</string>
+    <string name="phone_number">0982 720404</string>
+    <string name="email">info@innovaservice.eu</string>
+    <string name="whatsapp">scrivici su whastapp</string>
+    <string name="photo_text">ricevi un preventivo attraverso una foto</string>
+    <string name="contact_us">scegli come contattarci ...</string>
+</resources>

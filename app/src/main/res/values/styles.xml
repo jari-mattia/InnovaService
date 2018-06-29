@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Innova" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.Innova.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#2A7CB1</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="Theme.Innova.Home" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorPrimary">@color/colorPrimaryHome</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkHome</item>
+        <item name="colorAccent">@color/colorAccentHome</item>
+    </style>
+
+</resources>
